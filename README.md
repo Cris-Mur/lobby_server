@@ -22,7 +22,18 @@ This service can work as RestAPI service, check our documentation https://app.sw
 
 * Install npm and nodejs on your system
 * clone this repository and the server repository github.com/Cris-Mur/lobby_server
+```bash
+  git clone {{repository}}
+```
+* Run npm install dependencies
+```bash
+  npm install (inside two repositories)
+```
 * Run the server with npm run dev & the client with npm run start, two projects must be running for correct usage
+```bash
+  npm run dev (on server)
+  npm run start (on client)
+```
 * default client port is 3000 and default server port is 3001
 
 ## Disclaimer
