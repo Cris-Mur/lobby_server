@@ -19,14 +19,10 @@ router.post('/', function(req, res, next) {
     username: req.body.username,
     password: bcrypt.hashSync(req.body.password, 10),
     firstName: req.body.firstName,
-    isPublic: req.body.isPublic,
     lastName: req.body.lastName,
-    phone: req.body.phone,
-    birthday: req.body.birthday,
     role: 'USER_ROLE',
     state: req.body.state,
     timezone: req.body.timezone,
-    status: req.body.status
   });
   user
     .save()
