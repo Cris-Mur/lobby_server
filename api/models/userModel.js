@@ -52,12 +52,12 @@ let userSchema = new mongoose.Schema({
   },
   phone: {
     type: String,
-    required: [true, 'Phone number is required'],
+    default: '',
   },
   birthday: {
     // YYYY-MM-DD
     type: Date,
-    required: [true, 'birthday required'],
+    default: '2000-01-01',
   },
   role: {
     type: String,
@@ -70,7 +70,7 @@ let userSchema = new mongoose.Schema({
   },
   timezone: {
     type: String,
-    required: "lolito",
+    required: "GMT-5",
   },
   status: {
     type: Boolean,
